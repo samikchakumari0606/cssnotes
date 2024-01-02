@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery </title>
+    <style>
+        #box{
+            height:auto;
+            width:50%;
+            border:2px solid green;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #box>div{
+            border:2px solid red;
+        }
+         
+          /* .one{
+            height:50px;
+            width:100%;
+            border:2px solid green;
+            
+          }
+          .two{
+            height:50px;
+            width:100%;
+            border:2px solid green;
+            
+          }
+          .three{
+            height:50px;
+            width:100%;
+            border:2px solid green;
+            background-color: green;
+          }
+          .four{
+            height:50px;
+            width:100%;
+            border:2px solid green;
+            background-color: yellow;
+          }
+          .five{
+            height:50px;
+            width:100%;
+            border:2px solid green;
+            background-color:lightcoral;
+          } */
+
+       
+
+        @media  screen and (min-width:200px)and  (max-width:500px){
+            #box{
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                background-color:aqua;
+            }
+        }
+          
+        
+
+    </style>
+</head>
+<body>
+   <div id="box">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+   </div>
+   
+
+   
+    
+</body>
+</html>

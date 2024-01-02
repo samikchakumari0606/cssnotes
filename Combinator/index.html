@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /* decendent combinator */
+        #box .h2 {
+        background-color: brown;
+        }
+        /* #innerBox p{
+           background-color: lightcoral;
+        } */
+
+
+        /* child combinator */
+        /* #innerBox>p{
+            color:darkcyan
+        }
+        #innerBox>h6{
+            color:khaki;
+        } */
+
+       /* sibling selector */
+        #innerBox~p{
+         background-color: blueviolet;
+        }
+        h1~h2{
+            font-size: 55px;
+        }
+
+
+
+     /* adjecent selctor */
+      h3+p{
+       font-size: 50px;
+        color:red;
+      }
+
+      h6+p{
+        color:green;
+      }
+
+       
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="innerBox">
+            <h6>this is h6</h6>
+            <p>this is paragraph One</p>
+            <h1>heading</h1>
+            <p>this is paragraph</p>
+            <p>this is paragraph</p>
+            <h2 class="h2">this is h2</h2>
+        </div>
+        <p>new paragraph</p>
+        <h2 class="h2">this is h2</h2>
+        <p>cfvghbjnkm</p>
+
+
+        <h3>this is h3</h3>
+        <p>vubhj</p>
+    </div>
+    
+</body>
+</html>
